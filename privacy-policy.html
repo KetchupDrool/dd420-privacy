@@ -102,7 +102,7 @@ hr {
   </div>
 
   <h1>Privacy Policy</h1>
-  <div class="effective">Effective Date: October 3, 2026 &nbsp;·&nbsp; Version 2.0</div>
+  <div class="effective">Effective Date: October 3, 2026 &nbsp;·&nbsp; Version 2.1</div>
 
   <div class="highlight-box">
     <p><strong>The short version:</strong> DD-420 stores your logs on your device by default. We do not collect personal data on our servers. No accounts. No tracking. No ads. Optional private iCloud backup (off by default, Settings → Your Data) is user-controlled, manual, and private to your Apple ID — not continuous sync. Your information stays yours.</p>
@@ -112,15 +112,21 @@ hr {
   <p>DD-420 is an independent iOS wellness application designed to help military veterans track PTSD symptoms and cannabis use. The app was built by an Army veteran with TBI and PTSD, for veterans — from personal experience with PTSD and the tools that help manage it. It is published as a sole proprietorship.</p>
   <p>Questions about this policy: <a href="mailto:ddf420vet@gmail.com">ddf420vet@gmail.com</a></p>
 
-  <h2>2. Data We Collect</h2>
-  <p><strong>We collect no personal data.</strong></p>
-  <p>DD-420 does not require an account. We do not ask for your name, email address, phone number, location, or any identifying information.</p>
-  <p>All data you enter — check-ins, symptom logs, cannabis sessions, notes, settings — is stored on your device using Apple's SwiftData framework. It does not go to our servers. The only ways data leaves the phone are when you explicitly export or share (for example a PDF), or when you opt in to optional private iCloud backup.</p>
+  <h2>2. Data Stored on Your Device</h2>
+  <p><strong>We do not collect personal data on our servers.</strong> DD-420 does not require an account, and we do not operate a backend that receives your health logs.</p>
+  <p>You may optionally enter a name or nickname, caregiver details, and an emergency contact name and phone number. Those fields stay on your device (and can be included in optional private iCloud backup if you enable it). We do not require email, location, or other identifying information to use the app.</p>
+  <p>All data you enter — check-ins, symptom logs, cannabis sessions, scanned product details, notes, settings, and optional profile/contact fields — is stored on your device using Apple's SwiftData framework (and related local storage). It does not go to our servers.</p>
+  <p>Data leaves the phone only when you choose one of these paths:</p>
+  <ul>
+    <li>Export or share (for example a PDF or caregiver summary via the iOS share sheet)</li>
+    <li>Optional private iCloud backup that you enable and run</li>
+    <li>Send Feedback (a user-initiated email that may include device and app metadata you send)</li>
+  </ul>
 
-  <h2>3. Data We Do Not Collect</h2>
+  <h2>3. Data We Do Not Collect on Our Servers</h2>
   <p>We do not collect, store, or transmit any of the following on our own servers:</p>
   <ul>
-    <li>Names, email addresses, or contact information</li>
+    <li>Names, email addresses, or contact information (except what you choose to put in a Send Feedback email)</li>
     <li>Location data or GPS coordinates</li>
     <li>Health or medical records</li>
     <li>Device identifiers or advertising IDs</li>
@@ -128,6 +134,7 @@ hr {
     <li>Behavioral tracking or session data</li>
     <li>Financial information</li>
   </ul>
+  <p>Optional name, caregiver, and emergency contact fields you enter are stored locally on your device (and may be included in your private iCloud backup). They are not uploaded to our servers.</p>
 
   <h2>4. On-Device Storage &amp; Optional iCloud Backup</h2>
   <p>Every piece of information you log — symptoms, cannabis sessions, moods, triggers, notes — lives on your iPhone by default. We have no servers that receive your health logs. There is no continuous cloud sync and no backend database operated by us.</p>
@@ -138,35 +145,50 @@ hr {
   <p>All users can generate a full clinical PDF report to share with a VA provider or therapist. This report includes symptom data, cannabis logs, and usage patterns. It is generated entirely on your device and is not sent to any server. You control where it goes — you initiate the share, and iOS handles delivery via Messages, Mail, AirDrop, or any app you choose. We never see the contents of any report you generate.</p>
 
   <h2>6. Caregiver Sharing (Free Feature)</h2>
-  <p>DD-420 includes a free Caregiver Sharing feature available to all users. This allows you to share a simple wellness summary — such as recent mood trends or session counts — with a trusted caregiver, family member, or support person of your choosing.</p>
-  <p>This sharing is always voluntary and always initiated by you. We do not send caregiver data to any server. Sharing is handled through iOS's built-in share sheet (Messages, Mail, AirDrop, etc.), which means you control who receives it and how. We never have access to any shared content.</p>
+  <p>DD-420 includes a free Caregiver Sharing feature available to all users. You can create and share any of the following with a trusted caregiver, family member, or support person of your choosing:</p>
+  <ul>
+    <li><strong>Full Wellness Report (PDF)</strong> — a detailed on-device report (content preferences are under your control)</li>
+    <li><strong>Quick Summary</strong> — a shorter wellness overview (for example recent mood trends or session counts)</li>
+    <li><strong>Emergency Info Card</strong> — includes emergency contact details you entered, calming strategies, and recent symptom status</li>
+  </ul>
+  <p>This sharing is always voluntary and always initiated by you through iOS's built-in share sheet (Messages, Mail, AirDrop, etc.). We do not send caregiver data to any server. You control who receives it and how. We never have access to any shared content.</p>
 
-  <h2>7. Apple Health (HealthKit) — Future Feature</h2>
+  <h2>7. Widgets &amp; App Group</h2>
+  <p>DD-420 may show Home Screen widgets that read a small subset of local data — such as your name, recent check-in scores, streak, or last cannabis date — through an on-device App Group container shared between the app and the widget extension. That container stays on your device. It is not our server and is not used to upload your health logs to us.</p>
+
+  <h2>8. Camera &amp; Product Scanning</h2>
+  <p>If you use the camera to scan a cannabis product label or QR code, camera frames/images are processed on your device for recognition and are not stored as photos in the app. Derived text and QR payloads you keep can be saved locally for your tracking and verification, and may be included in optional private iCloud backup if you enable it. Scanned data is not sent to our servers.</p>
+
+  <h2>9. Send Feedback</h2>
+  <p>Settings includes an optional Send Feedback action that opens a user-initiated email to the developer. That message may include device and app metadata you choose to send (for example app version, build, iOS version, and device model). Health logs are not automatically attached. Sending feedback is entirely voluntary.</p>
+
+  <h2>10. Apple Health (HealthKit) — Future Feature</h2>
   <p>A future version of DD-420 may include optional integration with Apple Health (HealthKit) to read wellness data such as heart rate or sleep. If this feature is added, it will be strictly opt-in. Any HealthKit data accessed will remain on your device and will not be transmitted to any server. This policy will be updated before that feature is released.</p>
 
-  <h2>8. Optional Tips (Buy Me a Bag)</h2>
+  <h2>11. Optional Tips (Buy Me a Bag)</h2>
   <p>DD-420 is 100% free. All features are available to every user at no cost. The app offers optional one-time tips ($2.99 / $4.99 / $9.99) as a way to support development — entirely voluntary, with no features locked behind them. Tips are consumable purchases processed by Apple through the App Store. We do not collect or store your payment information. We receive only a confirmation from Apple that a tip was completed — no financial details.</p>
 
-  <h2>9. Notifications</h2>
+  <h2>12. Notifications</h2>
   <p>DD-420 may request permission to send local notifications (such as daily check-in reminders). These are generated and delivered entirely on your device by iOS. We do not use push notification services. No data leaves your device as part of the notification system.</p>
 
-  <h2>10. Children's Privacy</h2>
+  <h2>13. Children's Privacy</h2>
   <p>DD-420 is designed for adults aged 18 and older and is rated 17+ on the App Store. We do not knowingly collect information from anyone under 18. If you believe a minor has used this app, contact us and we will assist in removing any locally stored data.</p>
 
-  <h2>11. Third-Party Services</h2>
+  <h2>14. Third-Party Services</h2>
   <p>DD-420 does not integrate with any third-party analytics, advertising, or data-sharing services. There are no SDKs from Facebook, Google, Firebase, Mixpanel, or similar platforms in the app.</p>
   <p>The only third-party platform involved is Apple — through the App Store, StoreKit, and, if you enable optional private iCloud backup, CloudKit / iCloud under your Apple ID — governed by Apple's own privacy policy. We cannot read your private iCloud backup.</p>
+  <p>Links you open in Safari (for example Facebook, VA, or Certificate of Analysis pages) are user-initiated. Those destinations have their own privacy policies.</p>
 
-  <h2>12. Security</h2>
-  <p>Because your health logs stay on your device unless you export them or opt into private iCloud backup, security is tied to your iPhone's security and — if you enable backup — your Apple ID / iCloud protections. We recommend using a passcode, Face ID, or Touch ID. If your device is lost or stolen, your data is protected by iOS device encryption.</p>
+  <h2>15. Security</h2>
+  <p>Because your health logs stay on your device unless you export them, send feedback, or opt into private iCloud backup, security is tied to your iPhone's security and — if you enable backup — your Apple ID / iCloud protections. We recommend using a passcode, Face ID, or Touch ID. If your device is lost or stolen, your data is protected by iOS device encryption.</p>
 
-  <h2>13. Your Rights</h2>
+  <h2>16. Your Rights</h2>
   <p>Because we do not store your health logs on our servers, there is nothing for us to access, correct, or delete on our end. Data on your device is under your control. You can delete it in the app's settings or by deleting the app. If you created an optional iCloud backup, you can delete that cloud copy from Settings → Your Data.</p>
 
-  <h2>14. Changes to This Policy</h2>
+  <h2>17. Changes to This Policy</h2>
   <p>If we update this policy, we will post the new version here and update the effective date. If the changes are material, we will notify you within the app. Continued use of DD-420 after a policy change constitutes acceptance of the updated policy.</p>
 
-  <h2>15. Contact</h2>
+  <h2>18. Contact</h2>
   <p>Questions, concerns, or requests related to this privacy policy:</p>
   <p><a href="mailto:ddf420vet@gmail.com">ddf420vet@gmail.com</a></p>
 
